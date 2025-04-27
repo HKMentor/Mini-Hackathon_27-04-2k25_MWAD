@@ -183,13 +183,13 @@ p {
 
 /* testimonial */
 .testimonial {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .testimonial .col-3 {
     justify-content: center;
     text-align: center;
-    padding: 20px 90px;
+    padding: 20px 70px;
     cursor: pointer;
     transition: transform 0.5s;
 }
