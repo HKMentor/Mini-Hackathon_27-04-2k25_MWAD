@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.btn {
+    display: inline-block;
+    background: #4CAF4F;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #434643;
+}
+
+/* Hero Section */
+.hero {
+    background: #fff;
+}
+
+.hero-container {
+    max-width: 1300px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    margin-left: 6em;
+    margin-top: 10em;
+
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 70px;
+    margin-top: 3em;
+}
+
+h1 span {
+    color: #4CAF4F;
+}
+
+p {
+    color: #939893;
+}
+
+.dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF4F;
+    border-radius: 50%;
+    margin: 0 5px;
+
+}
+
+.dots .dot2 {
+    width: 10px;
+    height: 10px;
+    background-color: #acafac;
+    border-radius: 50%;
+    margin: 0 5px;
+
+}
+
+.dots .dot:hover {
+    background-color: #1a1b18;
+    /* Green color */
+}
+
+
+/* our client */
+.our-client {
+    text-align: center;
+    line-height: 1.5;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.our-client h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #626161;
+}
+
+
+
+
+.client-image {
+    display: flex;
+    justify-content: center;
+    height: 5em;
+}
+
+/* Responsive Styles for Tablets (Medium Screens) */
+@media (max-width: 768px) {
+    .our-client h2 {
+        font-size: 1.8rem;
+    }
+
+    .our-client p {
+        padding: 0 100px;
+        font-size: 14px;
+    }
+
+    .client-image {
+        height: 15em;
+    }
+}
+
+@media (max-width: 480px) {
+    .our-client h2 {
+        font-size: 1.5rem;
+    }
+
+
+
+    .our-client {
+        height: 12em;
+    }
+}
+
+/* testimonial */
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial .col-3 {
+    justify-content: center;
+    text-align: center;
+    padding: 20px 90px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 20em;
+}
+
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+
+}
+
+.testimonial .col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+    height: 20px;
+    width: 20em;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+/* offer */
+.offer {
+    margin-top: 20px;
+    padding: 20px 40;
+}
+
+.col-2 img {
+    padding: 10px 30px;
+    margin-left: 35px;
+}
+
+small {
+    color: #555;
+}
+
+.col-2 h1 {
+    color: #333;
+    font-size: 2.5em;
+}
+
+/* reviews */
+.stats-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 70px;
+}
+
+.stats-text {
+    flex: 1;
+}
+
+.stats-text h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stats-text h2 span {
+    color: #4CAF50;
+}
+
+.stats-text p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.stats-grid {
+    flex: 1.5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.stat-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.stat-info h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.stat-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* 2ndlastdiv */
+.secondlastdiv {
+    text-align: center;
+    line-height: 1.5;
+    background-color: #f4f1f1;
+    padding: 20px 0;
+}
+
+.secondlastdiv h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+/* blog */
+.blog-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.blog-header h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 16px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+}
+
+
+.blog-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* percing */
+.percing col-2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+.footer {
+    background-color: #263238;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container-footer {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-brand {
+    flex: 1 1 25%;
+    text-align: left;
+}
+
+.brand-logo {
+    display: flex;
+    justify-content: left;
+
+}
+
+.brand-logo img {
+    width: 100%;
+    color: #fff;
+    margin-left: -10px;
+    margin-top: 2rem;
+
+}
+
+
+
+.brand-description {
+    font-size: 13px;
+    color: white;
+    margin-top: 25px;
+}
+
+.brand-description a {
+    font-size: 13px;
+    color: blue;
+    margin-top: 25px;
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: #fffafa;
+    margin-top: 2rem;
+}
+
+.icon a i {
+    color: #fffafa;
+    transition: color 0.3s ease;
+}
+
+.icon a i:hover {
+    color: #4CAF4F;
+}
+
+
+
+.footer-links {
+    display: flex;
+    flex: 3 1 75%;
+    justify-content: space-around;
+}
+
+.link-column h2 {
+    font-size: 20px;
+    color: rgb(255, 252, 252);
+    margin-bottom: 10px;
+}
+
+.link-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link-column li a {
+    text-decoration: none;
+    color: rgb(219, 216, 216);
+    font-size: 14px;
+    line-height: 2.5rem;
+    transition: color 0.3s;
+}
+
+.link-column li a:hover {
+    color: #333;
+}
+
+
+.link-column1 {
+    color: white;
+    line-height: 3rem;
+
+}
+
+.link-column1 input {
+    width: 15em;
+    height: 2em;
+    background-color: gray;
+    border: none;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+/* responsive */
+
+/* Mobile Responsive (Max Width 480px) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    nav {
+        text-align: left;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col-2 img {
+        margin: 2em auto 0 auto;
+        display: block;
+    }
+
+    .col-2 h1 {
+        font-size: 2em;
+        margin-top: 1em;
+    }
+
+    .hero-container {
+        padding: 0 20px;
+    }
+
+    .our-client {
+        padding: 20px;
+    }
+
+    .client-image {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .testimonial .col-3 {
+        padding: 10px 20px;
+    }
+
+    .stats-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card {
+        width: 90%;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-brand, .footer-links {
+        text-align: center;
+    }
+
+    .link-column1 input {
+        width: 80%;
+    }
+}
